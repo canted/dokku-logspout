@@ -21,7 +21,6 @@ do_run() {
         --env-file=${DOKKU_LOGSPOUT_ROOT}/ENV \
         --publish=127.0.0.1:${DOKKU_LOGSPOUT_PORT}:8000 \
         -v ~/.aws/credentials:/root/.aws/credentials \
-        --rm \
         -it \
         johann8384/logspout-cloudwatch \
         $DOKKU_LOGSPOUT_SYSLOG_SERVER)
